@@ -2,7 +2,7 @@ package JavaBasico;
 
 import java.util.Scanner;
 
-public class Ex010 {
+public class Ex10 {
     public static void main(String[] args){
         String colaborador,cargo = "";
         int codigo;
