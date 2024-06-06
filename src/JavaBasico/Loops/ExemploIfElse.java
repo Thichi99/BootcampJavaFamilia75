@@ -1,4 +1,4 @@
-package JavaBasico;
+package JavaBasico.Loops;
 
 import java.util.Scanner;
 
