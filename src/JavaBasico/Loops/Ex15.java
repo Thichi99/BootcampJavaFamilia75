@@ -9,21 +9,26 @@ public class Ex15 {
 
         Scanner leia = new Scanner(System.in);
 
-        System.out.println("\nDigite um número: ");
-        num = leia.nextInt();
-
         do {
-            if (num % 3 == 0){
-                somaNum += num;
-                x++;
-            }
             System.out.println("\nDigite um número: ");
             num = leia.nextInt();
 
+            if (num == 0) {
+                System.out.println("\nVocê digitou ZERO, vamos finalizar o programa!");
+            }else {
+                if (num % 3 == 0) {
+                    somaNum += num;
+                    x++;
+                }
+            }
         } while (num != 0);
 
-        media = (float) somaNum / x;
+        if (x == 0){
+            System.out.println("\nNão foi possível achar a média...");
+        } else {
+            media = (float) somaNum / x;
 
-        System.out.printf("A média de todos os números digitados que sejam múltiplos de 3 é: %.1f",media);
+            System.out.printf("A média de todos os números digitados que sejam múltiplos de 3 é: %.1f", media);
+        }
     }
 }
