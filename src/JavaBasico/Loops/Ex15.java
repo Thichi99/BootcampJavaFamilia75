@@ -13,7 +13,7 @@ public class Ex15 {
         num = leia.nextInt();
 
         do {
-            if (num >=1 && num % 3 == 0){
+            if (num % 3 == 0){
                 somaNum += num;
                 x++;
             }
